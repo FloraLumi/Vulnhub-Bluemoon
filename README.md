@@ -139,7 +139,7 @@ If a user can run Docker as root (or is in the docker group), it’s basically r
 
 ## Final Attack Chain Summary
 Here’s the full flow in one clean chain:
-* Discover IP using ARP scanning (netdiscover)
+* Discover IP using nmap -sn
 * Scan ports (nmap) → find HTTP + FTP + SSH
 * Website looks empty → directory brute force (gobuster)
 * Find hidden directory → QR code clue
